@@ -1,0 +1,12 @@
+CLIS
+sequelize-auto -o "./models" -d mydemo_db -h localhost -u postgres -p 5432 -x postgres -e postgres
+
+
+npx sequelize-cli migration:generate --name create-company
+npx sequelize-cli db:migrate
+npx sequelize db:migrate:undo:all
+
+
+npx sequelize-cli seed:generate --name insert-company
+npx sequelize-cli db:seed:all
+npx sequelize-cli db:seed:undo:all
