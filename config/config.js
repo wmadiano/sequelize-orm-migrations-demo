@@ -3,7 +3,7 @@ module.exports={
     "username": "postgres",
     "password": "postgres",
     "database": "mydemo_db",
-    "host": "localhost",
+    "host": "172.18.0.3",// "localhost",
     "dialect": "postgres"
   },
   "test": {
